@@ -14,7 +14,7 @@ pp. 3912-3917. (ISBN:978-1-5090-1897-0).
 * Tamás Ferenci, Johanna Sápi, Levente Kovács. Modelling Tumor Growth Under Angiogenesis Inhibition
 with Mixed-effects Models. ACTA POLYTECHNICA HUNGARICA 14:(1) pp. 221-234. (2017).
 
-Code is available [here]<https://github.com/tamas-ferenci/TumorGrowthMixedEffects/blob/master/TumorGrowthMixedEffects.R>.
+Code is available [here](https://github.com/tamas-ferenci/TumorGrowthMixedEffects/blob/master/TumorGrowthMixedEffects.R).
 Columns of `RawData` are: `Date` (date of the measurement), `Type` (`C` denotes control, `E` denotes
 treated), `Code` (unique identifier of the mouse), `Caliper1`, `Caliper2`, `Caliper3`, `MRI`
 (measurements of the given mouse at the given date with the respective measurement methods).
