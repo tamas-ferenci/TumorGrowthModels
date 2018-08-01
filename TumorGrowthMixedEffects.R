@@ -35,7 +35,6 @@ mysettings <- list( superpose.line = list( col = rep( trellis.par.get()$superpos
 predgrid <- expand.grid( DateDay = 0:150, Type = unique( RawData$Type ),
                          MeasurementType = unique( RawData$MeasurementType ) )
 
-
 # Exponential
 
 ## I use this approach instead of nlsList so that I can use nlsLM
