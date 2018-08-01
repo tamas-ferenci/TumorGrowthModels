@@ -5,7 +5,7 @@ library( Hmisc )
 library( minpack.lm )
 library( nlstools )
 
-RawData <- fread( "TeljesAdatok.csv", dec = "," )
+RawData <- fread( "RawDataExample.csv", dec = "," )
 
 RawData$Date <- as.Date( RawData$Date, format = "%Y.%m.%d" )
 RawData$MRI <- as.numeric( RawData$MRI )
@@ -47,7 +47,7 @@ IndExp <- do.call( rbind, lapply( unique( RawData$CodeMeasType ), function( cmt 
 } ) )
 
 cairo_pdf( "IndExp.pdf" )
-Dotplot( as.numeric( cmt ) ~ Cbind( est, `2.5%`, `97.5 %` ) | par, data = IndExp,
+Dotplot( as.numeric( cmt ) ~ Cbind( est, `2.5 %`, `97.5 %` ) | par, data = IndExp,
          scales = list( relation = "free",
                         y = list( at = 1:length( unique( IndExp$cmt ) ),
                                   labels = levels( IndExp$cmt )[ 1:length( unique( IndExp$cmt ) ) ]
