@@ -17,4 +17,6 @@ with Mixed-effects Models. ACTA POLYTECHNICA HUNGARICA 14:(1) pp. 221-234. (2017
 Code is available [here](https://github.com/tamas-ferenci/TumorGrowthMixedEffects/blob/master/TumorGrowthMixedEffects.R).
 Columns of `RawData` are: `Date` (date of the measurement), `Type` (`C` denotes control, `E` denotes
 treated), `Code` (unique identifier of the mouse), `Caliper1`, `Caliper2`, `Caliper3`, `MRI`
-(measurements of the given mouse at the given date with the respective measurement methods).
+(measurements of the given mouse at the given date with the respective measurement methods). An
+example file [is provided](https://github.com/tamas-ferenci/TumorGrowthMixedEffects/blob/master/RawDataExample.csv)
+with randomly generated data.
